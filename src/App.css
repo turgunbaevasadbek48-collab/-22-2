@@ -1,0 +1,50 @@
+body {
+  width: 1680px;
+  padding: 30px;
+  background-color: darkgray;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.container {
+  width: 300px;
+  height: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.container h2 {
+  width: 240px;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+.container div {
+  margin: 20px;
+}
+
+.container h3 {
+  color: brown;
+  font-size: 25px;
+  margin: 20px;
+  margin-left: 20px;
+}
+
+.container mark {
+  padding: 5px;
+  font-size: 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.container p {
+  width: 200px;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 20px;
+}
