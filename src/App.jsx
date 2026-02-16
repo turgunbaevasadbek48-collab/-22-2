@@ -6,25 +6,23 @@ function App() {
   const [data, setData] = useState([])
   useEffect(() => {
     axios
-    .get("https://jsonplaceholder.typicode.com/users")
+    .get("https://fakestoreapi.com/carts")
     .then((res) => setData(res.data))
     .catch(err => console.error(err))
   },[])
   return (
     <div className="app">
+      <title>Hello</title>
       {data.map((item, index) => (
         <div className="container" key={item.id}>
-          <h2>{item.name}</h2>
+          <h2>{item.userId}</h2>
+          <br />
+          <mark>{item.date}</mark>
           <div>
-            <h3>{item.username}</h3>
-            <mark>{item.email}</mark>
+            <p>{item.products.productId}</p>
+            <p>{item.products.quantity}</p>
           </div>
-          <div>
-            <p>{item.address.street}</p>
-            <p>{item.phone}</p>
-          </div>
-          <h3>{item.website}</h3>
-          <p>{item.company.name}</p>
+          <h3>{item.__v}</h3>
         </div>
       ))}
     </div>
